@@ -31,14 +31,30 @@
                     <li><a href="#" class="action_btn"> Get Started</a></li>
             </div>
         </header>
+
+        <main>
+            <section id="hero">
+                <h1>welcome</h1>
+                <p> Lorem ipsum dolor site amet consectetur<br />
+                    adipisicing elit. Aliquam, atque.
+                </p>
+            </section>
+        </main>
         <script>
             const toggleBtn = document.querySelector('.toggle_btn')
             const toggleBtnIcon = document.querySelector('.toggle_btn i')
             const dropdown_Menu = document.querySelector('.dropdown_menu')
 
-            toggleBtn.onclik = function() {}
+            toggleBtn.onclik = function() {
             dropdown_Menu.classList.toggle('open')
-            
+            cons isOpen = dropdown_Menu.classList.classList('open')
+
+
+            toggleBtnIcon.classList = isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+
+            }
             </script>
     </body>
 </html>
